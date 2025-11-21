@@ -12,8 +12,7 @@ GRUPO 12:
 * Mariana Mayume Caniza - 10290174
 * Stella Amaral de Campos - 10441310
 
-## 📋 Índice
----
+
 ## 📋 Índice
 ---
 
@@ -22,7 +21,7 @@ GRUPO 12:
 * [3. Implementação e Avaliação](#3-implementação-e-avaliação)
     * [Desempenho das Métricas (Resultados)](#desempenho-das-métricas-resultados)
 * [4. Coerência Semântica (Análise Qualitativa)](#4-coerência-semântica-análise-qualitativa)
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MarianaMayumeCaniza/PROJETOAPLICADO3_2025.2/blob/main/Projeto_III_grupo_12.ipynb)
 
 ### 🌟 1. Resumo do Projeto (Visão Geral)
 O projeto visa implementar e avaliar um sistema de recomendação de restaurantes usando o algoritmo K-Nearest Neighbors (KNN) Item-Based.
