@@ -40,10 +40,12 @@ Configuração:
 
 Avaliação Offline: Utilizou-se o histórico de sessões de interação. 
 O último restaurante exibido foi a semente, e o escolhido foi o item relevante.
-Métricas Chave: Precision@k, NDCG@k, e MRR (Mean Reciprocal Rank).
+Métricas Chave: 
+* Precision@k,
+* NDCG@k,
+* MRR (Mean Reciprocal Rank).
 
-Desempenho das Métricas (Resultados):
-**Desempenho do Modelo**
+**Desempenho das Métricas (Resultados):**
 A Tabela 1 apresenta os valores médios das métricas de desempenho para diferentes valores de k.
 
 | k | Precision/Recall (Hit Rate) | NDCG | MRR |
@@ -61,4 +63,12 @@ A Tabela 1 apresenta os valores médios das métricas de desempenho para diferen
 Observação: A Precision (Hit Rate) cresceu de 1,1% $(k=3)$ para 10,3% $(k=50)$, indicando que o aumento de $k$ melhora a cobertura, mas o baixo valor de MRR sugere limitações no ranqueamento, revelando que o item relevante nem sempre aparece no topo da lista
 
 ### 💡 4. Coerência Semântica (Análise Qualitativa)
-A análise qualitativa demonstrou a coerência semântica das recomendações, validando a abordagem KNN Item-Based29292929.Item SementeRecomendações (5 mais similares)CoerênciaCafe DiemPeggy Sue's Diner, Einstein's, Brother Juniper's, OK Cafe, Blue Diner30303030.Semelhantes em estilo ("Diner" ou "Café")31.Alfredo's Italian RestaurantNino's, Toni's Casa Napoli, Asti Trattoria, Altobeli's Fine Italian Cuisine, Ray's New York Pizza32.Fortemente focadas em Culinária Italiana33.Sushi ZenTatany, Meriken, Kamehachi, Iso, Restaurant Two Two Two34.Fortemente focadas em Culinária Japonesa/Sushi35.
+[cite_start]A avaliação qualitativa complementa os resultados, demonstrando a **coerência semântica** das recomendações e validando a abordagem KNN Item-Based[cite: 220, 243]. [cite_start]O modelo consegue agrupar itens por atributos comuns, reproduzindo relações de similaridade plausíveis[cite: 233].
+
+| Item Semente | Recomendações (5 mais similares) | Coerência Semântica |
+| :--- | :--- | :--- |
+| **Cafe Diem** | [cite_start]Peggy Sue's Diner, Einstein's, Brother Juniper's, OK Cafe, Blue Diner [cite: 226, 228] | [cite_start]Semelhantes em estilo: **"Diner" ou "Café"**[cite: 226, 228, 238]. |
+| **Alfredo's Italian Restaurant** | [cite_start]Nino's, Toni's Casa Napoli, Asti Trattoria, Altobeli's Fine Italian Cuisine, Ray's New York Pizza [cite: 229] | [cite_start]Fortemente focadas em **Culinária Italiana**[cite: 229, 238]. |
+| **Sushi Zen** | [cite_start]Tatany, Meriken, Kamehachi, Iso, Restaurant Two Two Two [cite: 231] | [cite_start]Fortemente focadas em **Culinária Japonesa/Sushi**[cite: 231, 238]. |
+
+[cite_start]**Nota:** Os exemplos ilustram que o modelo KNN identifica corretamente a similaridade dos atributos (culinária, faixa de preço, ambiente), mesmo sem dados explícitos de avaliação do usuário[cite: 223, 243].
