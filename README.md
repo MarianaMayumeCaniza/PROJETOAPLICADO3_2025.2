@@ -13,7 +13,7 @@ GRUPO 12:
 * Stella Amaral de Campos - 10441310
 
 
-🌟 1. Resumo do Projeto (Visão Geral)
+### 🌟 1. Resumo do Projeto (Visão Geral)
 O projeto visa implementar e avaliar um sistema de recomendação de restaurantes usando o algoritmo K-Nearest Neighbors (KNN) Item-Based.
 A solução dialoga com o ODS 11 da ONU (Cidades e Comunidades Sustentáveis), auxiliando na organização e acesso a serviços urbanos.
 | Ponto-Chave | Detalhe |
@@ -24,14 +24,14 @@ A solução dialoga com o ODS 11 da ONU (Cidades e Comunidades Sustentáveis), a
 | **Modelo** | **KNN Item-Based** com similaridade do Cosseno. |
 | **Representação**| **TF-IDF** (Term Frequency-Inverse Document Frequency). |
 
-🛠️ 2. Metodologia (Pipeline)
+### 🛠️ 2. Metodologia (Pipeline)
 A metodologia seguiu o ciclo padrão de um projeto de Machine Learning.
 
 Processo: Definição do Problema → Coleta de Dados → Pré-processamento → Implementação do Algoritmo → Treinamento → Avaliação → Otimização.
 
 Pré-processamento: A base de dados (que inclui informações de 8 cidades como Chicago e Nova York ) foi unificada , e os atributos dos restaurantes (como tipo de cozinha e ambiente ) foram vetorizados com a técnica TF-IDF.
 
-⚙️ 3. Implementação e Avaliação
+### ⚙️ 3. Implementação e Avaliação
 O modelo KNN Item-Based foi treinado para calcular a similaridade entre os restaurantes com base em seus atributos vetorizados por TF-IDF20.
 Configuração: 
 * $k=50$ vizinhos,
@@ -43,7 +43,7 @@ O último restaurante exibido foi a semente, e o escolhido foi o item relevante.
 Métricas Chave: Precision@k, NDCG@k, e MRR (Mean Reciprocal Rank).
 
 Desempenho das Métricas (Resultados):
-### Desempenho do Modelo
+**Desempenho do Modelo**
 A Tabela 1 apresenta os valores médios das métricas de desempenho para diferentes valores de k.
 
 | k | Precision/Recall (Hit Rate) | NDCG | MRR |
@@ -60,5 +60,5 @@ A Tabela 1 apresenta os valores médios das métricas de desempenho para diferen
 *Legenda: k: número de vizinhos; NDCG: Normalized Discounted Cumulative Gain; MRR: Mean Reciprocal Rank.*
 Observação: A Precision (Hit Rate) cresceu de 1,1% $(k=3)$ para 10,3% $(k=50)$, indicando que o aumento de $k$ melhora a cobertura, mas o baixo valor de MRR sugere limitações no ranqueamento, revelando que o item relevante nem sempre aparece no topo da lista
 
-💡 4. Coerência Semântica (Análise Qualitativa)
+### 💡 4. Coerência Semântica (Análise Qualitativa)
 A análise qualitativa demonstrou a coerência semântica das recomendações, validando a abordagem KNN Item-Based29292929.Item SementeRecomendações (5 mais similares)CoerênciaCafe DiemPeggy Sue's Diner, Einstein's, Brother Juniper's, OK Cafe, Blue Diner30303030.Semelhantes em estilo ("Diner" ou "Café")31.Alfredo's Italian RestaurantNino's, Toni's Casa Napoli, Asti Trattoria, Altobeli's Fine Italian Cuisine, Ray's New York Pizza32.Fortemente focadas em Culinária Italiana33.Sushi ZenTatany, Meriken, Kamehachi, Iso, Restaurant Two Two Two34.Fortemente focadas em Culinária Japonesa/Sushi35.
