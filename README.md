@@ -1,7 +1,7 @@
 # PROJETOAPLICADO3_2025.2
 
 
-##Recomendações Inteligentes para Alimentação Saudável: 
+## Recomendações Inteligentes para Alimentação Saudável: 
 Personalização a partir de preferências do usuário
 
 
