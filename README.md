@@ -12,6 +12,17 @@ GRUPO 12:
 * Mariana Mayume Caniza - 10290174
 * Stella Amaral de Campos - 10441310
 
+## 📋 Índice
+---
+## 📋 Índice
+---
+
+* [1. Resumo do Projeto](#1-resumo-do-projeto-visão-geral)
+* [2. Metodologia (Pipeline)](#2-metodologia-pipeline)
+* [3. Implementação e Avaliação](#3-implementação-e-avaliação)
+    * [Desempenho das Métricas (Resultados)](#desempenho-das-métricas-resultados)
+* [4. Coerência Semântica (Análise Qualitativa)](#4-coerência-semântica-análise-qualitativa)
+
 
 ### 🌟 1. Resumo do Projeto (Visão Geral)
 O projeto visa implementar e avaliar um sistema de recomendação de restaurantes usando o algoritmo K-Nearest Neighbors (KNN) Item-Based.
