@@ -63,12 +63,13 @@ A Tabela 1 apresenta os valores médios das métricas de desempenho para diferen
 Observação: A Precision (Hit Rate) cresceu de 1,1% $(k=3)$ para 10,3% $(k=50)$, indicando que o aumento de $k$ melhora a cobertura, mas o baixo valor de MRR sugere limitações no ranqueamento, revelando que o item relevante nem sempre aparece no topo da lista
 
 ### 💡 4. Coerência Semântica (Análise Qualitativa)
-[cite_start]A avaliação qualitativa complementa os resultados, demonstrando a **coerência semântica** das recomendações e validando a abordagem KNN Item-Based[cite: 220, 243]. [cite_start]O modelo consegue agrupar itens por atributos comuns, reproduzindo relações de similaridade plausíveis[cite: 233].
+A avaliação qualitativa complementa os resultados, demonstrando a **coerência semântica** das recomendações e validando a abordagem KNN Item-Based. 
+O modelo consegue agrupar itens por atributos comuns, reproduzindo relações de similaridade plausíveis.
 
 | Item Semente | Recomendações (5 mais similares) | Coerência Semântica |
 | :--- | :--- | :--- |
-| **Cafe Diem** | [cite_start]Peggy Sue's Diner, Einstein's, Brother Juniper's, OK Cafe, Blue Diner [cite: 226, 228] | [cite_start]Semelhantes em estilo: **"Diner" ou "Café"**[cite: 226, 228, 238]. |
-| **Alfredo's Italian Restaurant** | [cite_start]Nino's, Toni's Casa Napoli, Asti Trattoria, Altobeli's Fine Italian Cuisine, Ray's New York Pizza [cite: 229] | [cite_start]Fortemente focadas em **Culinária Italiana**[cite: 229, 238]. |
-| **Sushi Zen** | [cite_start]Tatany, Meriken, Kamehachi, Iso, Restaurant Two Two Two [cite: 231] | [cite_start]Fortemente focadas em **Culinária Japonesa/Sushi**[cite: 231, 238]. |
+| **Cafe Diem** | Peggy Sue's Diner, Einstein's, Brother Juniper's, OK Cafe, Blue Diner | Semelhantes em estilo: **"Diner" ou "Café"**. |
+| **Alfredo's Italian Restaurant** | Nino's, Toni's Casa Napoli, Asti Trattoria, Altobeli's Fine Italian Cuisine, Ray's New York Pizza  | Fortemente focadas em **Culinária Italiana**. |
+| **Sushi Zen** | Tatany, Meriken, Kamehachi, Iso, Restaurant Two Two Two  |Fortemente focadas em **Culinária Japonesa/Sushi**. |
 
-[cite_start]**Nota:** Os exemplos ilustram que o modelo KNN identifica corretamente a similaridade dos atributos (culinária, faixa de preço, ambiente), mesmo sem dados explícitos de avaliação do usuário[cite: 223, 243].
+**Nota:** Os exemplos ilustram que o modelo KNN identifica corretamente a similaridade dos atributos (culinária, faixa de preço, ambiente), mesmo sem dados explícitos de avaliação do usuário.
